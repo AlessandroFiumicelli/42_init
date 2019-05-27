@@ -1,0 +1,10 @@
+# Identify the IP addres of the DNS that responds to the following url: slash16.org
+#!/usr/bin/env bash
+nslookup slash16.org | head -2
+
+# or dig slash16.org | grep SERVER | awk -F '[()]' '{print $2}'
+
+# dig is used to query DNS for slash16.org
+# the IP address is located in the server part
+# awk -F '[()] '{print $2}' will extract values between brackets '()'
+# The -F fs option defines the input field separator to be the regular expression fs

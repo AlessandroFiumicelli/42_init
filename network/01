@@ -1,0 +1,6 @@
+# Get the list of the network interfaces of the machine without displaying any detail
+# for these interfaces. Only the list of names
+#!/usr/bin/env bash
+ifconfig -l
+
+# or ifconfig -a | grep flags | grep mtu | cut -d ":" -f 1

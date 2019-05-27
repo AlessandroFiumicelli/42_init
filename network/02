@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Identify and display the Ethernet interface characteristics:
+ifconfig -L en0
+# Identify brodcast address
+ifconfig -L en0 | grep "brodcast " | cut -d " " -f 2
+# Identify all IP adresses which are part of the same subnet
+ifconfig -L en0 | grep "inet " | cut -d " " -f 2

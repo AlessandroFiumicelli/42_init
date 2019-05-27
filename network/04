@@ -1,0 +1,12 @@
+# Identify the default gateway in the routing table
+#!/usr/bin/env/ bash
+netstat -nr | grep default -m 1 | cut -d " " -f 13
+
+# or
+#netstat -nr | grep default | haed -1 | awk '/default/{print $2}'
+
+# netstat's '-n' flag shows network addresses as numbers. When this flag is not specified, the netstat command interprets addresses where possible and displays them symbolically. This flag can be used with any of the display formats.
+# netstat's '-r' flag shows the routing tables. When used with the -s flag, the-r flag shows routing statistics. See Routing Table Display.
+# # 'grep default': filters lines containing 'default' and keeps only one (-m 1)
+# 'head -1' will remove one line from the grep result
+# awk '/default/{print $2}' : to display the value following 'default'

@@ -1,0 +1,5 @@
+# Query an external DNS server on the slash16.org domain name (ie. : google 8.8.8.8)
+#!/usr/bin/env bash
+nslookup slash16.org 8.8.8.8
+
+#nslookup is used for querying the Domain Name System (DNS) to obtain domain name or IP addres mapping.
