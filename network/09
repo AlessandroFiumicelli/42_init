@@ -1,0 +1,8 @@
+PING 42.fr (163.172.250.12) 56(84) bytes of data.
+64 bytes from 163.172.250.12 (163.172.250.12): icmp_seq=1 ttl=53 time=12.1 ms
+64 bytes from 163.172.250.12 (163.172.250.12): icmp_seq=2 ttl=53 time=11.4 ms
+^C
+--- 42.fr ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 11.463/11.829/12.196/0.382 ms
+
