@@ -1,2 +1,3 @@
 #!/usr/bin/env	bash
 ssh alfiumic@127.0.0.1 (local host)
+#   nome_utente@indirizzo_ip local host

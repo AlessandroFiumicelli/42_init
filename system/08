@@ -1,1 +1,1 @@
-Usualy the file is this: ~/.ssh/authoried_keys
+Usualy the file is this: '/etc/ssh/sshd_config' 

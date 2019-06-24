@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-adduser $nuser
+adduser <name> 
