@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-cat /etc/passwd | cut -d ':' -f1,3,7 --output-delimiter=' ' | column -t
